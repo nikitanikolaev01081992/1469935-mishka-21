@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Nikita Nikolaev](https://up.htmlacademy.ru/adaptive/21/user/1469935).
-* Наставник: `Неизвестно`.
+-   Студент: [Nikita Nikolaev](https://up.htmlacademy.ru/adaptive/21/user/1469935).
+-   Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
@@ -9,7 +9,7 @@
 
 Полезный файл:
 
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
+-   [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
