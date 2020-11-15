@@ -6,8 +6,72 @@
   </head>
   <body class="body">
     <header class="page-header">
-      <div class="page-header__content page-header__content--main wrapper">
-        <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+      <nav class="page-header__nav navigation wrapper">
+        <a
+          href=""
+          class="page-header__logo logo"
+          aria-label="Ссылка на главную страницу"
+        >
+          <picture class="logo__picture">
+            <source
+              media="(min-width: 1150px)"
+              srcset="img/header/mishka-logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 772px)"
+              srcset="img/header/mishka-logo-tablet.svg"
+            />
+            <img
+              src="img/header/mishka-logo-mobile.svg"
+              alt="Логотип магазина Мишка"
+              width="86"
+              height="35"
+            />
+          </picture>
+        </a>
+
+        <button class="navigation__toggle" aria-label="Открыть меню"></button>
+
+        <ul class="navigation__links navigation__links--group--main">
+          <li>
+            <a href="" class="navigation__link">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="" class="navigation__link">Вязание на заказ</a>
+          </li>
+        </ul>
+
+        <ul class="navigation__links navigation__links--group--user">
+          <li>
+            <a class="navigation__link navigation__link--search link-search"
+              ><span class="link-search__inner">Поиск по сайту</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="" class="navigation__link navigation__link--cart link-cart"
+              >Корзина: <span class="link-cart__inner">пока пуста</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navigation__links navigation__links--group--extra">
+          <li>
+            <a href="" class="navigation__link">Новые поступления</a>
+          </li>
+          <li>
+            <a href="" class="navigation__link">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main wrapper">
+      <header class="page-main__header page-main__header--main content-header">
+        <h1 class="content-header__title">
+          Милые штуки ручной работы для дома
+        </h1>
+
         <ul class="catalog-groups">
           <li>
             <a href="" class="catalog-groups__item">Предметы интерьера</a>
@@ -16,78 +80,11 @@
             <a href="" class="catalog-groups__item">Детские игрушки</a>
           </li>
         </ul>
-        <p class="page-header__info">Бесплатная доставка по России</p>
-      </div>
 
-      <div class="page-header__top-menu top-menu">
-        <div class="wrapper top-menu__wrapper">
-          <a href="">
-            <picture class="top-menu__logo logo">
-              <source
-                media="(min-width: 1150px)"
-                srcset="img/header/mishka-logo-desktop.svg"
-              />
-              <source
-                media="(min-width: 772px)"
-                srcset="img/header/mishka-logo-tablet.svg"
-              />
-              <img
-                src="img/header/mishka-logo-mobile.svg"
-                alt="Логотип магазина Мишка"
-                width="86"
-                height="35"
-              />
-            </picture>
-          </a>
+        <p class="content-header__info">Бесплатная доставка по России</p>
+      </header>
 
-          <a href="" class="top-menu__toggle" aria-label="Открыть меню"></a>
-
-          <nav>
-            <ul class="top-menu__links top-menu__links--main">
-              <li>
-                <a href="" class="top-menu__link">Каталог товаров</a>
-              </li>
-              <li>
-                <a href="" class="top-menu__link">Вязание на заказ</a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav>
-            <ul class="top-menu__links top-menu__links--secondary">
-              <li>
-                <a href="" class="top-menu__link">Новые поступления</a>
-              </li>
-              <li>
-                <a href="" class="top-menu__link">Распродажа</a>
-              </li>
-            </ul>
-          </nav>
-
-          <form
-            action="https://echo.htmlacademy.ru"
-            class="top-menu__search search"
-          >
-            <label for="input-search" class="search__label"
-              ><!--Тут будет иконка поиска--></label
-            >
-            <input
-              type="text"
-              name="input-search"
-              id="input-search"
-              class="search__input"
-            />
-          </form>
-
-          <a href="" class="top-menu__link top-menu__link--cart"
-            >Корзина: <span>пока пуста</span></a
-          >
-        </div>
-      </div>
-    </header>
-
-    <main class="content wrapper">
-      <section class="week-thing">
+      <section class="page-main__week-thing week-thing">
         <h2 class="week-thing__title">ТОВАР НЕДЕЛИ</h2>
         <h3 class="week-thing__name">Вязаные корзинки</h3>
         <p class="week-thing__description">
@@ -129,24 +126,12 @@
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">Экологически<br />чистые материалы</li>
-          <li class="about-us__item">
-            Скандинавский стиль<br />
-            по российской цене
-          </li>
-          <li class="about-us__item">
-            Увеличивает лайки<br />
-            на фотографиях
-          </li>
-          <li class="about-us__item">
-            Связано вручную<br />
-            с любовью и умилением
-          </li>
+          <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
           <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">
-            Поставляется<br />
-            в подарочной упаковке
-          </li>
+          <li class="about-us__item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
@@ -161,8 +146,10 @@
               фотографии сразу стали более стильными, а также набирают больше
               лайков!
             </blockquote>
-            <p class="reviews-item__author">Анастасия Красильникова</p>
-            <p class="reviews-item__profile-name">@misssssiskras</p>
+            <a href="" class="reviews-item__author">
+              <p class="reviews-item__author-name">Анастасия Красильникова</p>
+              <p class="reviews-item__profile-name">@misssssiskras</p>
+            </a>
           </li>
         </ul>
         <div class="reviews__controls">
@@ -200,7 +187,7 @@
           </dl>
         </address>
         <!--Здесь будет карта-->
-        <a href="" class="contacts__write-us button"></a>
+        <a href="" class="contacts__write-us button">Напишите нам</a>
       </section>
     </main>
 
@@ -248,7 +235,7 @@
       <section class="page-footer__socials">
         <h2 class="visually-hidden">Ссылки на социальные сети</h2>
         <ul class="social-list">
-          <li class="social-list__item social-list__item--instagram">
+          <li class="social-list__item">
             <a href="" aria-label="Ссылка на профиль магазина в Instagram">
               <svg
                 class="social-list__icon"
@@ -267,7 +254,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item social-list__item--facebook">
+          <li class="social-list__item">
             <a href="" aria-label="Ссылка на профиль магазина в Facebook">
               <svg
                 class="social-list__icon"
@@ -286,7 +273,7 @@
               </svg>
             </a>
           </li>
-          <li class="social-list__item social-list__item--twitter">
+          <li class="social-list__item">
             <a href="" aria-label="Ссылка на профиль магазина в Twitter">
               <svg
                 class="social-list__icon"
