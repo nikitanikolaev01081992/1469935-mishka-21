@@ -7,11 +7,7 @@
   <body class="body">
     <header class="page-header">
       <nav class="page-header__nav navigation wrapper">
-        <a
-          href=""
-          class="page-header__logo logo"
-          aria-label="Ссылка на главную страницу"
-        >
+        <a href="index.html" class="page-header__logo logo">
           <picture class="logo__picture">
             <source
               media="(min-width: 1150px)"
@@ -64,6 +60,8 @@
           </li>
         </ul>
       </nav>
+
+      <p class="page-header__info">Бесплатная доставка по России</p>
     </header>
 
     <main class="page-content wrapper">
@@ -71,8 +69,6 @@
         class="page-content__header page-content__header--main content-header"
       >
         <h1 class="content-header__title">Вязание на заказ</h1>
-
-        <p class="content-header__info">Бесплатная доставка по России</p>
       </header>
 
       <section class="make-order wrapper">
@@ -96,6 +92,7 @@
                 name="thing"
                 id="input-accessory"
                 value="accessory"
+                checked
               />
               <label class="order-form__label" for="input-accessory"
                 >Аксессуар для интерьера
@@ -125,6 +122,7 @@
                 name="color"
                 id="input-white"
                 value="white"
+                checked
               />
               <label class="order-form__label" for="input-white">Белый</label>
             </div>
@@ -135,6 +133,7 @@
                 name="color"
                 id="input-gray"
                 value="gray"
+                checked
               />
               <label class="order-form__label" for="input-gray">Серый</label>
             </div>
@@ -252,6 +251,7 @@
               placeholder="Ваш Email*"
               name="email"
               id="input-email"
+              pattern="[A-Za-z0-9_\-\.]+@[A-Za-z0-9_\-\.]+[\.]{1}(com|ru){1}"
               required
             />
           </div>
@@ -278,7 +278,7 @@
     </main>
 
     <footer class="page-footer wrapper">
-      <a href="">
+      <a href="index.html">
         <svg
           class="page-footer__logo"
           width="102"
