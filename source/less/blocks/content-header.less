@@ -1,0 +1,18 @@
+.content-header {
+  background-color: @bg-color-x;
+  background-image: url("../../img/main/hero-mobile.png");
+  background-repeat: no-repeat;
+
+  .media-bg-image(@width-tablet, "../../img/main/hero-tablet.png");
+
+  .media-bg-image(@width-desktop, "../../img/main/hero-desktop.png");
+}
+
+.content-header__title {
+  font-size: 27px;
+  line-height: 30px;
+
+  .media-font(@width-tablet, 43px, 50px);
+
+  .media-font(@width-desktop, 53px, 57px);
+}
