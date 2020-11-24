@@ -1,0 +1,52 @@
+.reviews {
+  background-repeat: no-repeat;
+
+  .media-bg-image(@width-tablet, "../img/main/review.jpg");
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  .media-font(@width-tablet, 43px, 50px);
+
+  .media-font(@width-desktop, 53px, 57px);
+}
+
+.reviews__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews-item__quote {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  color: @dark-color-extra;
+
+  .media-font(@width-tablet, 17px);
+}
+
+.reviews-item__author {
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+
+  &:visited {
+    color: @dark-color-basic;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.reviews-item__author-name {
+  font-weight: bold;
+}
+
+.reviews-item__profile-name {
+  line-height: 30px;
+}

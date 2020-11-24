@@ -1,0 +1,20 @@
+//mixin
+.media-font(@width, @font-size) {
+  @media screen and (min-width: @width) {
+    font-size: @font-size;
+  }
+}
+
+.media-font(@width, @font-size, @line-height) {
+  .media-font(@width, @font-size);
+
+  @media screen and (min-width: @width) {
+    line-height: @line-height;
+  }
+}
+
+.media-bg-image(@width, @url) {
+  @media screen and (min-width: @width) {
+    background-image: url(@url);
+  }
+}
