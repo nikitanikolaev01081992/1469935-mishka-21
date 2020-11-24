@@ -1,0 +1,20 @@
+.button {
+  color: @dark-color-extra;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 2px solid @dark-color-extra;
+
+  .media-font(@width-tablet, 17px);
+
+  &:hover {
+    color: @basic-light-color;
+    background-color: @dark-color-extra;
+  }
+
+  &:active {
+    background-color: @dark-color-extra;
+    color: rgba(@basic-light-color, 0.3);
+  }
+}
