@@ -1,0 +1,39 @@
+.thing__image {
+  background-color: @bg-color;
+}
+
+.thing__name {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  .media-font(@width-tablet, 20px);
+}
+
+.thing__link {
+  text-decoration: none;
+
+  &:visited {
+    color: @dark-color-basic;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.thing__parameters {
+  font-size: 13px;
+  line-height: 30px;
+  color: @dark-color-extra;
+
+  .media-font(@width-tablet, 15px);
+}
+
+.thing__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+
+  .media-font(@width-tablet, 17px);
+}
