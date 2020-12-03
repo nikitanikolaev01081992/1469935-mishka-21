@@ -2,23 +2,26 @@
   font-size: 17px;
   line-height: 24px;
   color: @dark-color-basic;
+  position: relative;
+
+  @media screen and (min-width: @width-medium) {
+    border-bottom: 1px solid @border-color;
+    padding: 0 @padding-medium;
+    height: 90px;
+  }
 }
 
 .page-header__info {
   display: none;
   font-size: 15px;
 
-  @media screen and (min-width: @width-tablet) {
+  @media screen and (min-width: @width-medium) {
     display: initial;
+    position: absolute;
+    right: @padding-medium;
   }
 }
 
 .page-header__logo {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  text-align: center;
 }
