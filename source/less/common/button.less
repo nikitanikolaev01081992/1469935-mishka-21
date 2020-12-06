@@ -4,10 +4,15 @@
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  text-align: center;
   border: 2px solid @dark-color-extra;
   background-color: transparent;
 
-  .media-font(@width-tablet, 17px);
+  .media-font(@width-medium, 17px);
+
+  @media screen and (max-width: @width-medium - 1px) {
+    display: block;
+  }
 
   &:hover {
     color: @basic-light-color;
