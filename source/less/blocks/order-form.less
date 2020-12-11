@@ -5,21 +5,36 @@
   .media-font(@width-medium, 19px);
 }
 
-.order-form__title {
-  font-weight: bold;
+.order-form__footer {
+  @media screen and (min-width: @width-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: @width-large) {
+    padding-left: @column-for-large;
+  }
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: @dark-color-extra;
+
+  .media-font(@width-medium, 17px, 30px);
+
+  @media screen and (min-width: @width-medium) {
+    order: 1;
+  }
+}
+
+.order-form__button {
+  width: 100%;
+
   font-size: 17px;
   line-height: 16px;
-  text-transform: uppercase;
-  color: @main-color;
-}
 
-.order-form__label {
-  font-weight: bold;
-}
-
-.order-form__input {
-  font-size: 17px;
-  line-height: 18px;
-
-  .media-font(@width-medium, 19px);
+  @media screen and (min-width: @width-medium) {
+    width: 230px;
+  }
 }
