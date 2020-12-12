@@ -1,5 +1,11 @@
 .page-content__header {
   background-color: @bg-color;
+
+  padding: 0 @padding-small;
+
+  @media screen and (min-width: @width-medium) {
+    padding: 0 @padding-medium;
+  }
 }
 
 .page-content__header--main {
