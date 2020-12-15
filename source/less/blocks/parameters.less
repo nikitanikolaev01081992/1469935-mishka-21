@@ -1,0 +1,22 @@
+.parameters {
+  margin: 0;
+  margin-left: -4px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parameters__pair {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parameters__pair:nth-of-type(n):not(:nth-last-of-type(1))::after {
+  content: ",";
+}
+
+.parameters__term,
+.parameters__value {
+  margin: 0;
+  margin-left: 4px;
+}

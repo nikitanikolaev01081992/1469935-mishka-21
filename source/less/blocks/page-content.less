@@ -1,3 +1,20 @@
+.page-content__catalog {
+  padding: 0 @padding-small;
+  margin-top: 30px;
+
+  @media screen and (min-width: @width-medium) {
+    padding: 0 @padding-medium;
+  }
+
+  @media screen and (min-width: @width-medium-catalog) {
+    margin-top: 67px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    margin-top: 111px;
+  }
+}
+
 .page-content__header {
   background-color: @bg-color;
 
@@ -17,4 +34,19 @@
   .media-bg-image(@width-medium, "../img/main/hero-tablet.jpg");
 
   .media-bg-image(@width-large, "../img/main/hero-desktop.jpg");
+}
+
+.page-content__manufacturing {
+  margin-top: 30px;
+  margin-bottom: 58px;
+
+  @media screen and (min-width: @width-medium-catalog) {
+    margin-top: 53px;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    margin-top: 57px;
+    margin-bottom: 105px;
+  }
 }
