@@ -1,0 +1,14 @@
+.thing-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  text-align: center;
+
+  @media screen and (min-width: @width-large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 51px;
+  }
+}
