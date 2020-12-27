@@ -1,0 +1,66 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+
+  background-color: rgba(@basic-light-color, 0.9);
+}
+
+.modal-active {
+  display: block;
+}
+
+.modal_container {
+  width: ~"min(100%, 566px)";
+  min-width: @width-small;
+
+  position: fixed;
+  left: ~"calc(50% - min(100%, 566px) / 2)";
+
+  padding: 28.5px @padding-small - 1px 46px;
+
+  background-color: @basic-light-color;
+  border: 1px solid @border-color-xx;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  animation-name: appearence;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+
+  @media screen and (min-width: @width-medium) {
+    padding: 36px 105px 46px;
+  }
+}
+
+.modal-closing .modal_container {
+  animation-name: disappear;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes appearence {
+  0% {
+    top: -500px;
+  }
+
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    top: -500px;
+  }
+}

@@ -1,0 +1,35 @@
+.icon-block {
+  position: relative;
+}
+
+.icon-block__icon {
+  fill: @dark-color-basic;
+}
+
+.icon-block__icon--cart,
+.icon-block__icon--search {
+  position: absolute;
+  left: @padding-small;
+  opacity: 0.2;
+
+  @media screen and (min-width: @width-medium) {
+    position: static;
+  }
+}
+
+.icon-block__icon--cart {
+  @media screen and (min-width: @width-medium) {
+    margin: 0 32px;
+  }
+}
+
+.icon-block:hover .icon-block__icon--cart,
+.icon-block:hover .icon-block__icon--search {
+  fill: @main-color;
+  opacity: 1;
+}
+
+.icon-block:active .icon-block__icon--cart,
+.icon-block:active .icon-block__icon--search {
+  opacity: 0.3;
+}
