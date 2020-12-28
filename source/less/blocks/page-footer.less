@@ -29,11 +29,11 @@
     display: block;
   }
 
-  &:hover path {
+  a:not("[href]") &:hover path {
     fill: @main-color-xx;
   }
 
-  &:active {
+  a:not("[href]") &:active {
     opacity: 0.3;
   }
 }
