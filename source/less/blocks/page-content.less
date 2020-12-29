@@ -29,7 +29,18 @@
   background-color: @bg-color-x;
   background-image: url("../img/main/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% -18px;
+
+  padding: 0;
+
+  @media screen and (min-width: @width-medium) {
+    padding: 0 @padding-medium 10px;
+    background-position: 50% -2px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    padding-bottom: 15px;
+  }
 
   .media-bg-image(@width-medium, "../img/main/hero-tablet.jpg");
 
@@ -47,6 +58,38 @@
 
   @media screen and (min-width: @width-large) {
     margin-top: 57px;
+    margin-bottom: 105px;
+  }
+}
+
+.page-content__week-thing {
+  @media screen and (min-width: @width-medium) {
+    margin-top: 40px;
+  }
+}
+
+.page-content__about-us {
+  margin-top: 21px;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    margin-top: 32px;
+    margin-bottom: 46px;
+  }
+}
+
+.page-content__contacts {
+  margin-bottom: 39px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 57px;
+  }
+
+  @media screen and (min-width: @width-large) {
     margin-bottom: 105px;
   }
 }

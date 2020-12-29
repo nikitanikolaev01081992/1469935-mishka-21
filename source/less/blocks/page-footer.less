@@ -6,7 +6,7 @@
   padding: 0 @padding-small;
 
   @media screen and (min-width: @width-medium) {
-    padding: @padding-medium;
+    padding: 51px @padding-medium 58px;
   }
 }
 
@@ -29,11 +29,11 @@
     display: block;
   }
 
-  &:hover path {
+  a:not("[href]") &:hover path {
     fill: @main-color-xx;
   }
 
-  &:active {
+  a:not("[href]") &:active {
     opacity: 0.3;
   }
 }

@@ -7,11 +7,21 @@
   align-items: center;
 }
 
+.developer__text {
+  margin: 0;
+}
+
 .developer__link {
   margin-left: 27px;
+
+  @media screen and (min-width: @width-large) {
+    margin-left: 29px;
+  }
 }
 
 .developer__icon {
+  display: block;
+
   path {
     fill: @main-color;
   }

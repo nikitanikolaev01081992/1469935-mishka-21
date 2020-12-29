@@ -1,0 +1,28 @@
+.block-with-zigzag {
+  position: relative;
+}
+
+.block-with-zigzag::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: @width-large;
+  height: 6px;
+  background-image: url("../img/main/zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+
+  @media screen and (min-width: @width-medium) {
+    height: 17px;
+    background-image: url("../img/main/zigzag-line-medium.svg");
+  }
+
+  @media screen and (min-width: @width-large) {
+    width: calc(100% - (2 * @padding-large));
+    left: ~"calc(50% - min(@{width-large} / 2, (100% - (2 * @{padding-large})) / 2))";
+    height: 23px;
+    background-image: url("../img/main/zigzag-line-large.svg");
+  }
+}
