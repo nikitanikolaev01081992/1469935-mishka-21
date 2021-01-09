@@ -62,16 +62,20 @@
 
 .content-header__title {
   margin: 0;
-  padding: 0 14%;
+
   font-size: 27px;
   line-height: 30px;
   text-align: center;
 
-  @media screen and (min-width: @width-medium) {
-    padding: 0 12%;
-  }
-
   .media-font(@width-medium, 43px, 50px);
 
   .media-font(@width-large, 53px, 57px);
+}
+
+.content-header__title--main {
+  padding: 0 14%;
+
+  @media screen and (min-width: @width-medium) {
+    padding: 0 12%;
+  }
 }
