@@ -27,24 +27,39 @@
 
 .page-content__header--main {
   background-color: @bg-color-x;
-  background-image: url("../img/main/hero-mobile.jpg");
+  background-image: url("../img/main/hero-small.jpg");
   background-repeat: no-repeat;
   background-position: 50% -18px;
 
   padding: 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main/hero-small@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media screen and (min-width: @width-medium) {
     padding: 0 @padding-medium 10px;
+
+    background-image: url("../img/main/hero-medium.jpg");
     background-position: 50% -2px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/hero-medium@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media screen and (min-width: @width-large) {
     padding-bottom: 15px;
+
+    background-image: url("../img/main/hero-large.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/hero-large@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
-
-  .media-bg-image(@width-medium, "../img/main/hero-tablet.jpg");
-
-  .media-bg-image(@width-large, "../img/main/hero-desktop.jpg");
 }
 
 .page-content__manufacturing {
