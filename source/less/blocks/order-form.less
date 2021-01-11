@@ -13,10 +13,14 @@
 
   @media screen and (min-width: @width-large) {
     padding-left: @column-for-large;
+    padding-right: @column-for-large;
   }
 }
 
 .order-form__note {
+  display: block;
+  margin-bottom: 31px;
+
   font-size: 14px;
   line-height: 16px;
   color: @dark-color-extra;
@@ -25,6 +29,8 @@
 
   @media screen and (min-width: @width-medium) {
     order: 1;
+    margin-bottom: 0;
+    padding-top: 11px;
   }
 }
 

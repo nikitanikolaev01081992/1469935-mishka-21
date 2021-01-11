@@ -113,12 +113,12 @@
       </div>
     </header>
 
-    <main class="page-content">
+    <main class="page-content page-content--main">
       <header
         class="page-content__header page-content__header--main content-header"
       >
         <div class="content-header__wrapper wrapper">
-          <h1 class="content-header__title page-title">
+          <h1 class="content-header__title content-header__title--main">
             Милые штуки ручной работы&nbsp;для&nbsp;дома
           </h1>
 
@@ -167,15 +167,22 @@
           <picture class="week-thing__image-container">
             <source
               media="(min-width: 1150px)"
-              srcset="img/main/triple-set-large.jpg"
+              srcset="
+                img/main/week-thing/triple-set-large.jpg    1x,
+                img/main/week-thing/triple-set-large@2x.jpg 2x
+              "
             />
             <source
               media="(min-width: 768px)"
-              srcset="img/main/triple-set-medium.jpg"
+              srcset="
+                img/main/week-thing/triple-set-medium.jpg    1x,
+                img/main/week-thing/triple-set-medium@2x.jpg 2x
+              "
             />
             <img
               class="week-thing__image"
-              src="img/main/triple-set-small.jpg"
+              src="img/main/week-thing/triple-set-small.jpg"
+              srcset="img/main/week-thing/triple-set-small@2x.jpg 2x"
               alt="3 вязанных двухцветные корзинки, каждая следующая меньше предыдущей"
               width="260"
               height="315"
@@ -233,7 +240,7 @@
         <div class="reviews__wrapper wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list">
-            <li class="reviews__item reviews-item">
+            <li class="reviews__item reviews-item reviews-item--active">
               <blockquote class="reviews-item__quote">
                 <p class="reviews-item__text">
                   Я молодая мама, но всё равно фотографии не набирали и близко
@@ -248,6 +255,40 @@
                     Анастасия Красильникова
                   </p>
                   <p class="reviews-item__profile-name">@misssssiskras</p>
+                </a>
+              </blockquote>
+            </li>
+            <li class="reviews__item reviews-item">
+              <blockquote class="reviews-item__quote">
+                <p class="reviews-item__text">
+                  Я сестра молодой мамы, но всё равно фотографии не набирали и
+                  близко такого количества лайков, как у&nbsp;популярных
+                  инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и
+                  игрушек в Мишке, и&nbsp;мои фотографии сразу стали более
+                  стильными, а также набирают больше лайков!
+                </p>
+
+                <a href="" class="reviews-item__author">
+                  <p class="reviews-item__author-name">
+                    Екатерина Красильникова
+                  </p>
+                  <p class="reviews-item__profile-name">@misssssiskras2</p>
+                </a>
+              </blockquote>
+            </li>
+            <li class="reviews__item reviews-item">
+              <blockquote class="reviews-item__quote">
+                <p class="reviews-item__text">
+                  Я двоюродная сестра молодой мамы, но всё равно фотографии не
+                  набирали и близко такого количества лайков, как
+                  у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила
+                  аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу
+                  стали более стильными, а также набирают больше лайков!
+                </p>
+
+                <a href="" class="reviews-item__author">
+                  <p class="reviews-item__author-name">Елена Красильникова</p>
+                  <p class="reviews-item__profile-name">@misssssiskras3</p>
                 </a>
               </blockquote>
             </li>
@@ -297,7 +338,6 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1608776282844!5m2!1sru!2sru"
               width="320"
               height="455"
-              frameborder="0"
               style="border: 0"
               allowfullscreen=""
               aria-hidden="false"
