@@ -1,4 +1,18 @@
+.make-order {
+  padding-top: 16px;
+
+  @media screen and (min-width: @width-medium) {
+    padding-top: 55px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    padding-top: 97px;
+  }
+}
+
 .make-order__text {
+  margin: 0;
+
   font-size: 13px;
   line-height: 24px;
   color: @dark-color-extra;
@@ -28,5 +42,61 @@
 .make-order__wrapper.make-order__wrapper--footer {
   @media screen and (min-width: @width-medium) {
     background-color: transparent;
+  }
+}
+
+.make-order__wrapper--text {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 13px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    margin-bottom: 14px;
+  }
+}
+
+.make-order__wrapper--type {
+  margin-bottom: 33px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.make-order__wrapper--color {
+  margin-bottom: 34px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.make-order__wrapper--name {
+  margin-bottom: 35px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.make-order__wrapper--contacts {
+  margin-bottom: 35px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.make-order__wrapper--extra {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: @width-medium) {
+    margin-bottom: 3px;
+  }
+
+  @media screen and (min-width: @width-large) {
+    margin-bottom: -1px;
   }
 }
