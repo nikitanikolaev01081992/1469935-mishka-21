@@ -11,14 +11,19 @@ navOpener &&
   });
 
 //Logic for modal window 'add-to-cart'
-const modapOpener = document.querySelector(".week-thing__button");
 const modalContainer = document.querySelector(".add-to-cart");
+const addToCartButtons = Array.from(
+  document.querySelectorAll(".thing__button-buy")
+);
+addToCartButtons.push(document.querySelector(".week-thing__button"));
 
-modapOpener &&
-  modapOpener.addEventListener("click", (evt) => {
-    evt.preventDefault();
-    modalContainer.classList.add("modal-active");
-  });
+addToCartButtons.forEach((item) => {
+  item &&
+    item.addEventListener("click", (evt) => {
+      evt.preventDefault();
+      modalContainer.classList.add("modal-active");
+    });
+});
 
 modalContainer &&
   modalContainer.addEventListener("click", (evt) => {
