@@ -6,10 +6,12 @@
   @media screen and (min-width: @width-medium) {
     content: "";
     position: absolute;
+
     bottom: 0;
     left: 0;
     right: 0;
     height: 24px;
+
     background-image: url("../img/main/zigzag-fill.svg");
     background-repeat: repeat-x;
   }
@@ -17,6 +19,19 @@
   @media screen and (min-width: @width-large) {
     background-image: url("../img/main/zigzag-fill-desktop.svg");
     height: 34px;
+
+    bottom: -15px;
+    left: calc(50% - ~"calc(@{width-large} / 2)");
+    right: unset;
+
+    width: @width-large;
+  }
+}
+
+.page-content__header--main.content-header::after {
+  @media screen and (min-width: @width-large) {
+    background-image: url("../img/main/zigzag-fill-desktop-main.svg");
+    bottom: 0;
   }
 }
 
@@ -25,14 +40,11 @@
 
   @media screen and (min-width: @width-medium) {
     min-height: 236px;
+    padding-top: 100px;
   }
 
   @media screen and (min-width: @width-large) {
-    min-height: 272px;
-  }
-
-  @media screen and (min-width: @width-medium) {
-    padding-top: 100px;
+    min-height: 255px;
   }
 
   display: flex;
