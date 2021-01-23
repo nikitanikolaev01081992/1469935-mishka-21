@@ -35,6 +35,22 @@ const styles = () => {
 
 exports.styles = styles;
 
+//Unminified styles
+
+const unminStyles = () => {
+  return gulp
+    .src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(rename("style.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+};
+
+exports.unminStyles = unminStyles;
+
 // HTML
 
 const html = () => {
@@ -156,7 +172,15 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(styles, html, scripts, images, createWebp, copyFonts),
+  gulp.parallel(
+    styles,
+    unminStyles,
+    html,
+    scripts,
+    images,
+    createWebp,
+    copyFonts
+  ),
   sprite
 );
 
@@ -166,6 +190,14 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
-  gulp.parallel(styles, html, scripts, images, createWebp, copyFonts),
+  gulp.parallel(
+    styles,
+    unminStyles,
+    html,
+    scripts,
+    images,
+    createWebp,
+    copyFonts
+  ),
   gulp.series(sprite, server, watcher)
 );
