@@ -51,7 +51,7 @@
             aria-label="Открыть меню"
           ></button>
 
-          <ul class="navigation__links navigation__links--group--main">
+          <ul class="navigation__links navigation__links--group-main">
             <li>
               <a href="catalog.html" class="navigation__link"
                 >Каталог товаров</a
@@ -62,7 +62,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--user">
+          <ul class="navigation__links navigation__links--group-user">
             <li>
               <a
                 href=""
@@ -102,7 +102,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--extra">
+          <ul class="navigation__links navigation__links--group-extra">
             <li>
               <a href="" class="navigation__link">Новые поступления</a>
             </li>
@@ -230,32 +230,32 @@
           <h2 class="about-us__title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li
-              class="about-us__item about-us__item--column--1 about-us__item--flower"
+              class="about-us__item about-us__item--column-1 about-us__item--flower"
             >
               Экологически чистые&nbsp;материалы
             </li>
             <li
-              class="about-us__item about-us__item--column--1 about-us__item--cash"
+              class="about-us__item about-us__item--column-1 about-us__item--cash"
             >
               Скандинавский стиль по&nbsp;российской цене
             </li>
             <li
-              class="about-us__item about-us__item--column--1 about-us__item--heart"
+              class="about-us__item about-us__item--column-1 about-us__item--heart"
             >
               Увеличивает лайки на&nbsp;фотографиях
             </li>
             <li
-              class="about-us__item about-us__item--column--2 about-us__item--round"
+              class="about-us__item about-us__item--column-2 about-us__item--round"
             >
               Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением
             </li>
             <li
-              class="about-us__item about-us__item--column--2 about-us__item--rocket"
+              class="about-us__item about-us__item--column-2 about-us__item--rocket"
             >
               Поддержка отечественного производителя
             </li>
             <li
-              class="about-us__item about-us__item--column--2 about-us__item--gift"
+              class="about-us__item about-us__item--column-2 about-us__item--gift"
             >
               Поставляется в&nbsp;подарочной&nbsp;упаковке
             </li>
@@ -381,8 +381,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <a>
-          <svg class="page-footer__logo" width="102" height="34">
+        <a aria-label="Логотип компании - надпись Мишка">
+          <svg
+            class="page-footer__logo"
+            width="102"
+            height="34"
+            aria-hidden="true"
+            focusable="false"
+          >
             <use xlink:href="#logo-simple"></use>
           </svg>
         </a>

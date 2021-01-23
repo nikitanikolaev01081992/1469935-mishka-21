@@ -57,13 +57,7 @@
   }
 }
 
-.about-us__item--column--1 {
-  @media screen and (min-width: @width-medium) {
-    grid-column-start: 1;
-  }
-}
-
-.about-us__item--column--2 {
+.about-us__item--column-2 {
   @media screen and (min-width: @width-medium) {
     grid-column-start: 2;
   }
@@ -72,7 +66,7 @@
 .generate-row-position(10);
 
 .generate-row-position(@n, @i: 1) when (@i =< @n) {
-  .about-us__item--column--1:nth-child(@{i}) {
+  .about-us__item--column-1:nth-child(@{i}) {
     grid-row: @i;
   }
   .generate-row-position(@n, (@i + 1));

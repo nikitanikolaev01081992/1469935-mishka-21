@@ -51,7 +51,7 @@
             aria-label="Открыть меню"
           ></button>
 
-          <ul class="navigation__links navigation__links--group--main">
+          <ul class="navigation__links navigation__links--group-main">
             <li>
               <a href="catalog.html" class="navigation__link"
                 >Каталог товаров</a
@@ -62,7 +62,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--user">
+          <ul class="navigation__links navigation__links--group-user">
             <li>
               <a
                 href=""
@@ -102,7 +102,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--extra">
+          <ul class="navigation__links navigation__links--group-extra">
             <li>
               <a href="" class="navigation__link">Новые поступления</a>
             </li>
@@ -148,7 +148,7 @@
                   class="input-group__container input-group__container--radio"
                 >
                   <input
-                    class="input-group__input input-group__input--type--radio visually-hidden"
+                    class="input-group__input input-group__input--type-radio visually-hidden"
                     type="radio"
                     name="thing"
                     id="input-accessory"
@@ -164,7 +164,7 @@
                   class="input-group__container input-group__container--radio"
                 >
                   <input
-                    class="input-group__input input-group__input--type--radio visually-hidden"
+                    class="input-group__input input-group__input--type-radio visually-hidden"
                     type="radio"
                     name="thing"
                     id="input-kid-toy"
@@ -188,7 +188,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-white"
@@ -203,7 +203,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-gray"
@@ -218,7 +218,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-tifanni"
@@ -232,7 +232,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-black"
@@ -246,7 +246,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-pink"
@@ -260,7 +260,7 @@
                   class="input-group__container input-group__container--checkbox"
                 >
                   <input
-                    class="input-group__input input-group__input--type--checkbox visually-hidden"
+                    class="input-group__input input-group__input--type-checkbox visually-hidden"
                     type="checkbox"
                     name="color"
                     id="input-orange"
@@ -288,7 +288,7 @@
                     >Имя:
                   </label>
                   <input
-                    class="input-group__input input-group__input--type--text"
+                    class="input-group__input input-group__input--type-text"
                     type="text"
                     placeholder="Введите ваше имя*"
                     name="name"
@@ -307,7 +307,7 @@
                     Фамилия:
                   </label>
                   <input
-                    class="input-group__input input-group__input--type--text"
+                    class="input-group__input input-group__input--type-text"
                     type="text"
                     placeholder="Укажите фамилию*"
                     name="surname"
@@ -326,7 +326,7 @@
                     Отчество:
                   </label>
                   <input
-                    class="input-group__input input-group__input--type--text"
+                    class="input-group__input input-group__input--type-text"
                     type="text"
                     placeholder="Отчество, если желаете"
                     name="patronymic"
@@ -349,7 +349,7 @@
                 </label>
                 <div class="input-group__icon-container">
                   <input
-                    class="input-group__input input-group__input--type--tel input-group__input--type--text"
+                    class="input-group__input input-group__input--type-tel input-group__input--type-text"
                     type="tel"
                     placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                     name="telephone"
@@ -376,7 +376,7 @@
                 </label>
                 <div class="input-group__icon-container">
                   <input
-                    class="input-group__input input-group__input--type--email input-group__input--type--text"
+                    class="input-group__input input-group__input--type-email input-group__input--type-text"
                     type="email"
                     placeholder="Ваш Email*"
                     name="email"
@@ -407,7 +407,7 @@
                   >Доп
                 </label>
                 <textarea
-                  class="input-group__input input-group__input--type--textarea"
+                  class="input-group__input input-group__input--type-textarea"
                   placeholder="Опишите все ваши пожелания к заказу"
                   name="extra"
                   id="input-extra"
@@ -433,8 +433,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <a href="index.html">
-          <svg class="page-footer__logo" width="102" height="34">
+        <a href="index.html" aria-label="Логотип компании - надпись Мишка">
+          <svg
+            class="page-footer__logo"
+            width="102"
+            height="34"
+            aria-hidden="true"
+            focusable="false"
+          >
             <use xlink:href="#logo-simple"></use>
           </svg>
         </a>

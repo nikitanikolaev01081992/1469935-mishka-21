@@ -210,7 +210,7 @@
   }
 }
 
-.input-group__input--type--text {
+.input-group__input--type-text {
   position: relative;
   z-index: 10;
 
@@ -239,7 +239,7 @@
   }
 }
 
-.input-group__input--type--textarea {
+.input-group__input--type-textarea {
   padding: 17px;
   min-height: 142px;
 
@@ -259,16 +259,16 @@
   position: relative;
 }
 
-.input-group__input--type--tel,
-.input-group__input--type--email {
+.input-group__input--type-tel,
+.input-group__input--type-email {
   width: 100%;
 }
 
-.input-group__input--type--tel {
+.input-group__input--type-tel {
   padding-right: 37px;
 }
 
-.input-group__input--type--email {
+.input-group__input--type-email {
   padding-right: 40px;
 }
 
@@ -358,7 +358,7 @@
   }
 }
 
-.input-group__input--type--radio + .input-group__label {
+.input-group__input--type-radio + .input-group__label {
   @media screen and (min-width: @width-medium) {
     margin-left: 3px;
   }
@@ -392,15 +392,15 @@
   }
 }
 
-.input-group__input--type--radio + .input-group__label::before {
+.input-group__input--type-radio + .input-group__label::before {
   border-radius: 50%;
 }
 
-.input-group__input--type--radio:checked + .input-group__label::before {
+.input-group__input--type-radio:checked + .input-group__label::before {
   background-color: @main-color;
 }
 
-.input-group__input--type--checkbox + .input-group__label::before {
+.input-group__input--type-checkbox + .input-group__label::before {
   box-shadow: var(--shadow-as-border);
 
   width: 38px;
@@ -418,7 +418,7 @@
   }
 }
 
-.input-group__input--type--checkbox:checked + .input-group__label::before {
+.input-group__input--type-checkbox:checked + .input-group__label::before {
   background-image: url("../img/main/input-group/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -427,4 +427,10 @@
     background-size: 32px 22px;
     background-position-y: 52%;
   }
+}
+
+.input-group__input--type-radio:focus + .input-group__label::before,
+.input-group__input--type-checkbox:focus + .input-group__label::before {
+  outline: 2px solid @dark-color-basic;
+  outline-offset: 5px;
 }

@@ -52,7 +52,7 @@
             aria-label="Открыть меню"
           ></button>
 
-          <ul class="navigation__links navigation__links--group--main">
+          <ul class="navigation__links navigation__links--group-main">
             <li>
               <a href="catalog.html" class="navigation__link"
                 >Каталог товаров</a
@@ -63,7 +63,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--user">
+          <ul class="navigation__links navigation__links--group-user">
             <li>
               <a
                 href=""
@@ -103,7 +103,7 @@
             </li>
           </ul>
 
-          <ul class="navigation__links navigation__links--group--extra">
+          <ul class="navigation__links navigation__links--group-extra">
             <li>
               <a href="" class="navigation__link">Новые поступления</a>
             </li>
@@ -473,8 +473,14 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <a href="index.html">
-          <svg class="page-footer__logo" width="102" height="34">
+        <a href="index.html" aria-label="Логотип компании - надпись Мишка">
+          <svg
+            class="page-footer__logo"
+            width="102"
+            height="34"
+            aria-hidden="true"
+            focusable="false"
+          >
             <use xlink:href="#logo-simple"></use>
           </svg>
         </a>
